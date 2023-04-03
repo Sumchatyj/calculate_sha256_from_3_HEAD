@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "calculate-sha256-from-3-head"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "calculate_sha256_from_3_head"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.8.4"
+beautifulsoup4 = "^4.12.0"
+lxml = "^4.9.2"
+[tool.poetry.dependencies.pylint]
+version = "*"
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+wemake-python-styleguide = "^0.17.0"
+pytest-asyncio = "^0.21.0"
+coverage = "^7.2.2"
+
+
+[tool.poetry.extras]
+lint = ["pylint"]
+
+[tool.black]
+line-length = 120
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "if __name__ == .__main__.:"
+]
