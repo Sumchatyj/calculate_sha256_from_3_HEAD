@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "calculate-sha256-from-3-head"
+name = "repository_scraper"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-packages = [{include = "calculate_sha256_from_3_head"}]
+packages = [{include = "repository_scraper"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
