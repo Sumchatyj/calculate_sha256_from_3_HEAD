@@ -6,7 +6,7 @@ This module fetches data from a specified repository URL using aiohttp and
 Beautiful Soup, saves any files found to the local file system and calculates
 the SHA-256 hash for all files downloaded to the local file system.
 
-Scraper has 100% test coverage
+Scraper has 100% test coverage.
 
 
 ## Getting started
